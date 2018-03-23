@@ -1,0 +1,15 @@
+#conteneur{
+	width: 800px;
+	margin: 0 auto;
+	background: paleturquoise;
+	padding: 40px;
+}
+
+input[type="text"], input[type="password"]{
+	display: block;
+	margin-bottom: 20px;
+}
+
+input[type="reset"]{
+	margin-top: 20px;
+}

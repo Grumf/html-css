@@ -1,0 +1,55 @@
+body{
+	background-color: turquoise;
+}
+
+p:first-child{ color: green } /* 1er élément */
+p:nth-child(even){ color: teal } /* pair */
+p:nth-child(odd){ color: brown } /* impair */
+p:nth-child(3){ color: darkorange } /* défini un élément */
+p:last-child{ color: purple } /* dernier élément */
+
+.zone_a{color: #f56f56}
+.zone_b{color: #996633}
+.bg_red{
+	background-color:red;
+	color : blue;
+	}
+	
+#zone_c{
+	background-color: green;
+	color: #98f32f;
+}
+
+#zone_c:after{
+	content:'x';
+}
+
+p.gras{font-weight:bold}
+
+[title]{background-color:black;}
+/* ou plus précis */
+[title="wesh"]{background-color:black;}
+
+/*
+L'utilisation des child n'est pas très rassurante, dans le cas où notre code serait ammené à évoluer. Il est préférable de favoriser l'utilisation de classes et d'id.
+
+Différence entre classes et id:
+Une classe est appelée par un "."
+Un id est appelé par un "#"
+Le w3c recommande d'utiliser les id une seule fois par page (cependant ce n'est pas une obligation), et des classes une ou plusieurs fois.
+
+règles d'écriture:
+	-div.zone{} veut dire: "va me chercher la div qui possède la classe zone"
+	-div .zone{} veut dire : "va me chercher la classe zone A L'INTERIEUR de la div" (c'est l'espace qui change la signification).
+	-.maclasse, .maclasse2{} il y a des virgules, on applique le style sur plusieurs éléments.
+	
+Selecteur de type: cible un élément correspondant au nom indiqué (header, main, footer, div)
+
+Selecteur de classe: cible un élément en fonction de sa valeur pour l'attribut class.
+
+Sélecteur d'identifiant: cible en fonction de la valeur de l'attribut ID.
+
+Sélecteur universel (*): Il cible tous les noeuds d'un document, autrement dit tous les éléments html.
+
+Sélecteur d'attribut : il cible des éléments en fonction de leur attribut [title]{} ou de leur attribut + valeur [title=valeur]{}
+ */

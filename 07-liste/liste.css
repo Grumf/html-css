@@ -1,0 +1,30 @@
+ul.liste{
+	list-style-type: none; /* disc/square/circle */
+	list-style-image: url(fleche.gif);
+	list-style-position: inside; /* inside */
+	/* list-style: ; */
+}
+
+/* .imbrique li{
+	list-style-type:none;
+	float: left;
+} */
+
+ul.horizon li{
+	float: left;
+	list-style-type: none;
+	padding: 5px 10px;
+	background-color: pink;
+	transition: .5s;
+}
+
+ul.horizon li:hover{
+	float: left;
+	list-style-type: none;
+	padding: 5px 10px;
+	background-color: purple;
+}
+
+.clear{
+	clear:both;
+}

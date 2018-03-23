@@ -1,0 +1,136 @@
+
+body{
+	font-family: arial;
+	background: #ddd;
+	line-height: 1.3em;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+#conteneur{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.zp{
+	background: #fff;
+	padding: 20px;
+	border-radius: 15px 15px 0px 0px;
+	-moz-border-radius: 15px 15px 0px 0px;
+	-webkit-border-radius: 15px 15px 0px 0px;
+	border: 0px solid #000000;
+}
+
+header{
+	width:580px;
+	padding: 20px;
+	float: left;
+}
+
+h1{
+	font-size: 4em;
+	color: #333;
+}
+
+h1, h2, h4{font-family: 'Lobster', cursive;}
+
+nav{
+	float: right;
+	margin: 70px 20px 0 0;
+}
+
+nav a{
+	background: dodgerblue;
+	color: #fff;
+	text-decoration: none;
+	margin-left:10px;
+	padding: 5px 25px;
+	font-size: 1.2em;
+	transition: .5s;
+}
+
+nav a:hover{
+	background: skyblue;
+}
+
+main, aside{
+	float: left;
+}
+
+main{
+	width: 630px;
+	background: #fff;
+	padding-right: 40px;
+}
+
+main li{
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+main img{
+	float:left;
+	width: 200px;
+	margin: 0 40px 20px 0;
+}
+
+h2{
+	color: dodgerblue;
+	font-size:2.5em;
+	margin-bottom: 45px;
+}
+
+h3{
+	color: #666678;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+h3 i{color:orange;
+	vertical-align: middle; margin-right: 5px;}
+
+aside li i{color:green;}
+aside li {font-size:1.2em; margin-bottom:20px;}
+
+h3 span{
+	font-weight: normal;
+}
+
+h4{
+	color: orange;
+	font-size: 2em;
+}
+
+aside{
+	width: 290px;
+	border: 1px dotted;
+	padding: 30px 15px;
+}
+
+aside ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+footer{
+	height: 80px;
+	line-height: 80px;
+	background: lime;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s;
+}
+
+footer a:hover{
+	color: skyblue;
+}
+
+.clear{
+	clear: both;
+}

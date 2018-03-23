@@ -1,0 +1,38 @@
+body{
+	background-color: paleturquoise;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+figure{
+	border: 3px solid #c0c0c0;
+	width: 300px;
+	position: relative;
+	overflow: hidden;
+}
+
+figure img{
+	display: block;
+}
+
+figcaption a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+figure figcaption{
+	background: rgba(0,0,0,0.75);
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	bottom: -20%;
+	width: 100%;
+	transition: .6s;
+}
+
+figure:hover figcaption{
+	bottom: 0;
+}

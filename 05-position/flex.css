@@ -1,0 +1,33 @@
+.conteneur{
+	height: 550px;
+	border: 1px solid #000;
+}
+
+#flex{
+	height: 100%;
+	display: flex;
+	flex-direction: row; /* choix de la direction principale : row/column/row-reverse/column-reverse */
+	justify-content:space-around; /* choisir l'alignement dans le sens principal (flex-start/center/flex-end/space-between/space-around) */
+	align-items: center; /* choisir l'alignement dans le sens secondaire (flex-start/center/flex-end) */
+}
+.item1, .item2, .item3 {
+	height: 500px;
+	width: 300px;
+}
+
+.item1{
+	background: green;
+	order:3; /* Permets de changer l'ordre des éléments dans le flex */
+	flex:1;
+}
+
+.item2{
+	background: orange;
+	align-self: flex-end; /* Choisi un alignement spécifique pour un bloc */
+	flex: 2;
+}
+
+.item3{
+	background: red;
+	align-self: flex-start;
+}

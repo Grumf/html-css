@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'BirthoftheFurious';
+	src: url('./BirthoftheFurious.eot');
+	src: local('BirthoftheFurious'), url('police/BirthoftheFurious/BirthoftheFurious.woff') format('woff'), url('police/BirthoftheFurious/BirthoftheFurious.ttf') format('truetype');
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	font-family: 'Londrina Outline', cursive;
+}
+
+h2{
+	font-family: 'BirthoftheFurious';
+	font-size: 6em;
+} 

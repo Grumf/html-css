@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Vidéo</title>
+	</head>
+	<body>
+		<h2>CIC.OGV</h2>
+		<!--controls permet d'afficher les commandes intuitives de la video poster determine une image de fond tant que la video n'est pas lancée. preload permet lorsque la page est chargée, de débuter le chargement de la vidéo sans que celle-ci ne soit jouée.
+		autoplay: lance la vidéo automatiquement.-->
+			<video controls poster="cic.gif" preload>
+				<source src="cic.ogv" type="video/ogg" />
+			</video>
+		<h2>CIC.WEBM</h2>
+			<video autoplay>
+				<source src="cic.webm" type="video/webm" />
+			</video>
+		<h2>CIC.MP4</h2>
+		<video controls>
+			<source src="cic.mp4" type="video/mp4"/>
+		<h2>CIC</h2>
+		<video controls>
+			<source src="cic.ogv" type="video/ogg"/>
+			<source src="cic.webm"/>
+			<source src="cic.mp4"/>
+		</video>
+	</body>
+</html>

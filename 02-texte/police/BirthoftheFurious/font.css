@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'BirthoftheFurious';
+	src: url('./BirthoftheFurious.eot');
+	src: local('BirthoftheFurious'), url('./BirthoftheFurious.woff') format('woff'), url('./BirthoftheFurious.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_77700">Text with this font applied</p> */
+.fontsforweb_fontid_77700 {
+	font-family: 'BirthoftheFurious' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

@@ -1,0 +1,14 @@
+body, div, p{margin:0;}
+
+#conteneur{
+	border: 2px solid #336699;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.orange{
+	color: #ff9c00;
+	position: relative;
+	/* top:; right:; left:; bottom:; */
+	top: 20px;
+}

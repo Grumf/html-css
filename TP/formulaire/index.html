@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Formulaire</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div id="conteneur">
+			<form method="get" action="valider.php">
+				<label for="monuser">Nom d'utilisateur</label>
+				<input type="text" id="monuser" name="user" required/>
+				
+				<label for="monmdp">Mot de passe</label>
+				<input type="password" id="monmdp" name="mdp" required/>
+				
+				<input type="checkbox" id="maco" name="connexion"/>
+				<label for="maco">Rester connecté(e)</label></br>
+			
+			<input type="reset" name="annule" value="Annuler" />
+			<input type="submit" name="envoi" value="Valider" />
+			</form>
+		</div>
+	</body>
+</html>

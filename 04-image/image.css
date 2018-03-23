@@ -1,0 +1,9 @@
+
+img.monimage{
+	width: 200px;
+	transition: 1s;
+}
+
+.monimage:hover{
+	transform: scale(1.2);
+}

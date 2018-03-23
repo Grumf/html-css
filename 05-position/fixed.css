@@ -1,0 +1,14 @@
+nav{
+	background: rgba(0,0,0,.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+}
+
+#contenu{
+	border: 2px solid blue;
+	padding: 20px;
+	margin-top: 70px;
+}

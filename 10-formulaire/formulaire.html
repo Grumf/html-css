@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formulaire</title>
+		<link rel="stylesheet" href="formulaire.css" />
+	</head>
+	<body>
+		<!-- Method permet de spécifier la technique de tramsmission du formulaire (post/get) action determine la page à charger après l'envoi du formulaire.
+		Enctype est necessaire pour l'utilisation du <input type="file"/> et spécifie son type d'encodage. -->
+		<form method="post" action="#">
+			<label for="monpseudo">Pseudo</label>
+			<input type="text" id="monpseudo" name="pseudo" />
+			
+			<label for="monprenom">Prénom</label>
+			<input type="text" id="monprenom" placeholder="Rentrez votre prénom" name="prenom"/>
+			
+			<label for="monmdp">Mot de passe</label>
+			<input type="password" id="monmdp" name="mdp" required />
+		<!-- required force l'utilisateur à entrer une donnée dans le champ, sans quoi le formulaire n'est pas envoyé. -->
+		
+			<label for="monemail">Email</label>
+			<input type="email" id="monemail" name="email"/>
+			
+			<label for="monavatar">Avatar</label>
+			<input type="file" id="monavatar" name="avatar"/>
+			
+			<!-- Disable permet de rendre indisponible ( on ne peut pas la sélectionner) une action, néanmoins visible. -->
+			
+			<label for="monpays">Pays</label>
+			<select id="monpays" name="pays">
+				<optgroup label="Europe">
+					<option value="fr" selected>France</option>
+					<option value="es">Espagne</option>
+					<option value="de">Allemagne</option>
+				</optgroup>
+			</select>
+			
+			<!-- checked permet de sélectionner par défaut une radio ou une checkbox -->
+			<label>Quels sont vos fruits préférés ?</label>
+			<input type="checkbox" name="fruit" value="orange" /> Orange
+			<input type="checkbox" name="fruit" value="banane" /> Banane
+			<input type="checkbox" name="fruit" value="pomme" /> Pomme
+			<input type="checkbox" name="fruit" value="poire" /> Poire
+			<input type="checkbox" name="fruit" value="raisin" /> Raisin
+			
+			<label class="block">Civilité</label>
+			<input type="radio" name="civilite" value="f" /> Femme
+			<input type="radio" name="civilite" value="h" /> Homme
+			
+			<label for="maville" class="block">Ville</label>
+			<input type="text" id="maville" name="ville" list="france" />
+				<datalist id="france">
+					<option>Paris</option>
+					<option>Marseille</option>
+					<option>Lyon</option>
+				</datalist>
+			
+			<label for="moncp">Code postal</label>
+			<input type="text" id="moncp" name="cp" pattern="[0-9]{5}" maxlength="5" title="5 chiffres requis entre 0 et 9" />
+			
+			<label for="monadresse">Adresse</label>
+			<textarea id="monadresse" name="adresse" rows="5" cols="15"></textarea>
+			<!-- rows et cols sont les attributs qui permettaientà l'origine de regler les dimensions de notre textarea -->
+			
+			<input type="hidden" name="cache" /> 
+			
+			<input type ="reset" name="efface" value="Annuler" />
+			<input type="submit" name="inscription" value="Enregistrer" />
+		</form>
+	</body>
+</html>

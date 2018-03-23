@@ -1,0 +1,16 @@
+body{
+	border: 1px solid blue;
+}
+
+.carre{
+	width: 170px;
+	height: 170px;
+	border: 1px solid;
+	text-align: center;
+	line-height:170px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}

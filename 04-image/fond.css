@@ -1,0 +1,17 @@
+body{
+	height:800px;
+	background: #333333 url(images/fond1.jpg) no-repeat 0 0/100%;
+	/* background-image: url(images/fond1.jpg); */
+	/* background-size: 100%; */
+	/* background-repeat: no-repeat; /*repeat-x, repeat-y*/ */
+	/* background-color: #333333; */
+	/* background-position: right bottom; /* ou 50px 50px. Possibilité de mettre une valeur négative */ */
+}
+
+.contenu{
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 800px;
+	height: 500px;
+	margin: 100px auto;
+	padding: 40px;
+}

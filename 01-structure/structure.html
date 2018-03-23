@@ -1,0 +1,74 @@
+<!--
+HTML est un langage à balise utilisé pour la création de contenu et la structuration sémantique des pages web
+
+Un élément, par exemple <header>, commence à la balise ouvrante <header> et se termine à la balise fermante </header>
+
+Les balisent indiquent la nature du contenu qu'elles encadrent. Elles disent: "ceci est le titre de la page", "ceci est un header", "ceci est un paragraphe de texte".
+
+Les balises ouvrantes peuvent contenir des informations additionnelles: des attributs. Certaines balises nécéssitent parfois un attribut pour fonctionner, parfois ils sont optionnels.
+
+Les attributs consistent en 2 parties :
+	- un nom d'attribut suivi de "="
+	- une valeur d'attribut entre ""  -->
+	
+	
+<!--
+Le DOCTYPE est la déclaration du type de document qui indique dans quel type la page html à été écrite. Celà indique aux anciens navigateurde désactiver leur moteur de rendu pour éviter les erreurs en cas de balises inconnues.
+-->
+<!DOCTYPE html>
+
+<!-- <html> encadre tout le contenu de la page, il est parfois appelé élément racine -->
+<html>
+
+	<!-- <head> contient les informations générales sur le document : les métadonnées : son titre, ses mots clés, sa description, ou les liens vers les scripts et feuilles css -->
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Super texte qui colle avec le contenu"/>
+		<meta name="keywords" content="key1, key2"/>
+		<title>Titre de la page</title>
+		
+		<!-- Link défini la relation entre le document courant et une ressource externe, classiquement une feuille de style. "href" indique le chemin vers le fichier externe. -->
+		<link rel="stylesheet" href="structure.css" />
+	</head>
+	<body>
+	
+		<!-- L'élément HTML <header> représente un groupe de contenu introductif ou de contenu aidant à la navigation. Il peut contenir des éléments de titre, mais aussi d'autres éléments tels qu'un logo, un formulaire de recherche, etc. -->
+		<header>
+			Header
+		</header>
+		
+		<!-- L'élément HTML <nav> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.). -->
+		<nav>
+			Menu
+		</nav>
+		
+		<!-- L’élément HTML <main> représente le contenu principal du <body> du document ou de l'application. Il ne peut pas y avoir plusieurs éléments <main> au sein d'un même document. Le contenu principal de la zone est constitué de contenu directement en relation, ou qui étend le sujet principal du document ou de la fonctionnalité principale d'une application. -->
+		<main>
+		
+			<!-- L'élément HTML <section> représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre. -->
+			<section>
+				Section 1
+			</section>
+			<section>
+			
+				<!-- L'élément HTML <div> (qui signifie division du document) est un conteneur générique qui permet d'organiser le contenu sans représenter rien de particulier. Il peut être utilisé afin de grouper d'autres éléments pour leur appliquer un style (en utilisant les attributs class ou id) ou parce qu'ils partagent des attributs aux valeurs communes, tel que lang. Il doit uniquement être utilisé lorsqu'aucun autre élément sémantique (par exemple <article> ou <nav>) n'est approprié. -->
+				<div>
+					Section 2
+				</div>
+				
+				<!-- L'élément HTML <span> est un conteneur générique en ligne (inline) pour les contenus phrasés. Il ne représente rien de particulier. Il peut être utilisé pour grouper des éléments afin de les mettre en forme (grâce aux attributs class ou id et aux règles CSS) ou parce qu'ils partagent certaines valeurs d'attribut comme lang. Il doit uniquement être utilisé lorsqu'aucun autre élément sémantique n'est approprié. <span> est très proche de l'élément <div>, mais l'élément <div> est un élément de bloc, alors que <span> est un élément en ligne. -->
+				<span>
+					Section 3
+				</span>
+				<span>
+					Section 3
+				</span>
+			</section>
+		</main>
+		
+		<!-- L'élément HTML <footer> représente le pied de page de la section ou de la racine de sectionnement la plus proche. Un pied de page ou de section contient habituellement des informations sur l'auteur de la section, les données relatives au droit d'auteur (copyright) ou les liens vers d'autres documents en relation. -->
+		<footer>
+			Pied de page
+		</footer>
+	</body>
+</html>

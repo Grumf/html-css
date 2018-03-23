@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	color: #ffffff;
+}
+
+#conteneur{
+	background: grey;
+	width: 960px;
+	margin: 0 auto;
+}
+
+header{
+	background-color: #A4409A;
+	height: 80px;
+}
+
+nav{
+	background-color: yellow;
+	height: 30px;
+}
+
+.a{
+	background-color: #ff0000;
+	width: 720px;
+}
+
+.b{
+	background-color: #0000ff;
+	width: 240px;
+}
+
+.a, .b{
+	height:500px;
+	float: left;
+	color: grey;
+	font-size: 3em;
+}
+
+.clear{
+	clear: both;
+}
+
+footer{
+	background-color: #E80B28;
+	height: 80px;
+}
